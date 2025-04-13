@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Tracker</title>
+</head>
+<body>
+    <center>
+    <h1>International Space Station Tracker</h1>
+
+    <h3>Current ISS Location:</h3>
+    <p>Latitude: <strong>{{ lat }}</strong></p>
+    <p>Longitude: <strong>{{ lon }}</strong></p>
+
+    <h3>Weather at ISS Location:</h3>
+    <p>Description: <strong>{{ weather_description }}</strong></p>
+    <p>Temperature: <strong>{{ temperature }}°C</strong></p>
+
+    <h3>Country Below the ISS:</h3>
+    <p><strong>{{ country }}</strong></p>
+
+    <h3>Country Flag:</h3>
+    {% if flag_url != "No flag available" %}
+        <img src="{{ flag_url }}" alt="Country Flag" width="100">
+    {% else %}
+        <p>No flag available.</p>
+    {% endif %}
+
+    <h3>Distance from Your Location:</h3>
+    <p><strong>{{ distance|round(2) }} km</strong></p>
+
+    <!-- Image of the ISS -->
+    <h3>Image of the International Space Station:</h3>
+    <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/02/iss_photographed_by_an_sts-130_crew_member2/10164959-2-eng-GB/ISS_photographed_by_an_STS-130_crew_member_pillars.jpg" 
+         alt="International Space Station" width="500">
+    </center>
+</body>
+</html>
