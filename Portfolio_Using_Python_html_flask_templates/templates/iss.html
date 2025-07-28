@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jacob Kaippallil Mathew</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Button CSS -->
+  <style>
+    .btn-click {
+      display: inline-block;
+      padding: 0.8em 1.5em;
+      background-color: #ff7276;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    }
+
+    .btn-click:hover {
+      background-color: #e45a5e;
+      transform: scale(1.05);
+    }
+
+    /* Flowchart styling */
+    .flowchart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+    }
+    .box {
+      background-color: #fff;
+      border: 2px solid #333;
+      padding: 15px 25px;
+      border-radius: 8px;
+      margin: 10px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+    .arrow {
+      font-size: 24px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RCH0KQQ7H2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RCH0KQQ7H2');
+</script>
+
+<body style="background-color: lightyellow;">
+  <center>
+    <h2>🚀 Project: ISS Tracker – Real-Time Satellite Location, Weather & Geospatial Insights with Flask</h2>
+  </center>
+
+  <div style="max-width: 800px; margin: 0 auto; background: white; padding: 1.5em; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    <h3 style="color: #333;">🔍 Project Description</h3>
+    <p>
+      A Flask-based web app that tracks the International Space Station (ISS) in real-time. It combines multiple APIs to provide:
+    </p>
+    <ul>
+      <li>📍 Live latitude and longitude of the ISS</li>
+      <li>🌤️ Real-time weather data for the ISS location</li>
+      <li>🗺️ Reverse geolocation with country name and flag</li>
+      <li>📏 Distance from Sudbury, Ontario</li>
+    </ul>
+    <p><strong>Tools Used:</strong> Flask, Open Notify API, OpenWeatherMap API, REST Countries API, Python</p>
+  </div>
+
+  <!-- Flowchart Section -->
+  <div style="margin: 40px auto; max-width: 800px;">
+    <h3 style="text-align:center;">🧠 ISS Tracker – Logic Flow</h3>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div style="padding: 15px 25px; background: white; border: 2px solid #444; border-radius: 10px; width: 280px; text-align: center;">User opens the app</div>
+      <div style="font-size: 28px; margin: 8px 0;">↓</div>
+      <div style="padding: 15px 25px; background: white; border: 2px solid #444; border-radius: 10px; width: 280px; text-align: center;">App requests ISS location</div>
+      <div style="font-size: 28px; margin: 8px 0;">↓</div>
+      <div style="padding: 15px 25px; background: white; border: 2px solid #444; border-radius: 10px; width: 280px; text-align: center;">App gets weather at location</div>
+      <div style="font-size: 28px; margin: 8px 0;">↓</div>
+      <div style="padding: 15px 25px; background: white; border: 2px solid #444; border-radius: 10px; width: 280px; text-align: center;">App calculates distance from your location</div>
+      <div style="font-size: 28px; margin: 8px 0;">↓</div>
+      <div style="padding: 15px 25px; background: white; border: 2px solid #444; border-radius: 10px; width: 280px; text-align: center;">App reverse geocodes country</div>
+      <div style="font-size: 28px; margin: 8px 0;">↓</div>
+      <div style="padding: 15px 25px; background: white; border: 2px solid #444; border-radius: 10px; width: 280px; text-align: center;">
+        If over land:<br>Show country name & flag<br><br>
+        If over water:<br>Show "The ISS is over water"
+      </div>
+      <div style="font-size: 28px; margin: 8px 0;">↓</div>
+      <div style="padding: 15px 25px; background: white; border: 2px solid #444; border-radius: 10px; width: 280px; text-align: center;">Display all data on webpage</div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <p>Click below to explore:</p>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 10px;">
+      <a href="https://github.com/FabaJac14/Python-Flask/tree/main/ISS_Tracker" target="_blank" class="btn-click">📂 GitHub</a>
+      <a href="https://strong-nocturnal-javadocs-jacobkmathew14.replit.app/" target="_blank" class="btn-click">🚀 Launch ISS Tracker</a>
+      <a href="https://3d51a0f9-fde3-4cbe-9fa5-4e314c126336-00-39pvmhp7z9zag.riker.replit.dev/" class="btn-click">🏠 Home</a>
+    </div>
+  </div>

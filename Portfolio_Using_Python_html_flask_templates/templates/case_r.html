@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Case Study 1 – Jacob Kaippallil Mathew</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background-color: #f4f8fb;
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      background: #fff;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    h2, h3, h4 {
+      color: #444;
+    }
+    .btn-click {
+      display: inline-block;
+      padding: 0.8em 1.5em;
+      background-color: #4a90e2;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    }
+    .btn-click:hover {
+      background-color: #357ab8;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <center><h2>📊 Project: Case Study 1 – Daily Activity Analysis</h2>
+   </center>
+
+    <h3>📋 Project Description</h3>
+    <p>As a Business Analytics student at Cambrian College, this project aimed to evaluate daily habits between September 9, 2024, to February 23, 2025. Using personal data, I analyzed patterns around study hours, sleep, happiness, and other personal variables to understand time management and balance in student life.</p>
+
+    <h4>📌 Key Variables</h4>
+    <ul>
+      <li><strong>Study Hours</strong>, <strong>Sleep</strong>, and <strong>Pages Read</strong> – Quantitative measures of daily activity</li>
+      <li><strong>Color of Clothing</strong>, <strong>Class</strong>, and <strong>Watch News</strong> – Categorical variables for personal and academic habits</li>
+      <li><strong>Happiness Level</strong> – Ordinal variable rated from 1 to 5</li>
+    </ul>
+
+    <h3>📈 Statistical Summary</h3>
+    <p><strong>Sleep:</strong> Average = 7.17 hrs (SD = 1.1)</p>
+    <p><strong>Study:</strong> Average = 3.7 hrs (SD = 1.24)</p>
+    <p><strong>Pages Read:</strong> Average = 4.58 pages (SD = 1.55)</p>
+
+    <h4>📊 Hypothesis Tests</h4>
+    <ul>
+      <li><strong>Study Hours > 3.13:</strong> p-value < 0.001 – Sufficient evidence to reject null.</li>
+      <li><strong>Sleep ≠ 7 hrs:</strong> p-value = 0.0703 – Fail to reject null, avg sleep ≈ 7 hrs.</li>
+      <li><strong>Pages Read ≠ 5:</strong> p-value = 0.0016 – Strong evidence mean pages read ≠ 5.</li>
+    </ul>
+
+    <h4>📚 Semester Comparison</h4>
+    <p>First semester study hours (Mean = 3.86) were higher than second semester (Mean = 3.38), supported by t-test p-value = 0.0118.</p>
+    <p>Paired t-tests on 10-day samples found no significant difference in study hours.</p>
+
+    <h3>📌 Conclusion</h3>
+    <p>The report reflects consistent study and sleep patterns with scope to increase reading habits. This case study helps in better time allocation and emphasizes the importance of self-reflection using data analytics techniques.</p>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <p>📄 View the full report below:</p>
+      <iframe src="/Case_study_1" width="80%" height="600px" style="border: 2px solid #ccc; border-radius: 10px;"></iframe>
+      <br><br>
+      <a href="/Case_study_1" download class="btn-click">⬇️ Download Report</a>
+    </div>
+    
+    <center>
+      <p>Click below to return to the main page</p>
+      <a href="https://3d51a0f9-fde3-4cbe-9fa5-4e314c126336-00-39pvmhp7z9zag.riker.replit.dev/" class="btn-click">Home</a>
+    </center>
+  </div>
+</body>
+</html>
